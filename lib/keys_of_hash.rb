@@ -1,14 +1,11 @@
 class Hash
   def keys_of(arguments)
-    listOfKeys=[]
-
-argument.each do |arg|
-    map do |key,value|
-     if arg == value
-   listOfKeys<< key
-      end
-     end
-    end
-listOfKeys
+    animals = []
+		self.each { |animal, place|
+			if arguments.include?(place)
+				animals << animal
+			end
+		}
+		return animals
   end
 end
