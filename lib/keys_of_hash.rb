@@ -5,7 +5,5 @@ class Hash
 			if arguments.include?(place)
 				animals << animal
 			end
-		}
-		return animals
   end
 end
